@@ -15,7 +15,7 @@ final class Methods{
   public function balance(string $currency) : object
   {
     $response = $this->getDataFromServer(
-      '/balance',
+      'balance',
       [
         'query' => [
           'currency' => $currency,

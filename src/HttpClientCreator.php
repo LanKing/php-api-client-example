@@ -17,7 +17,7 @@ final class HttpClientCreator
   ) : Client
   {
     $defaultHttpOptions = [
-      'base_uri' => rtrim($baseUri, '/'),
+      'base_uri' => rtrim($baseUri, '/') . '/',
       'headers' => [
         'Content-type' => "application/json",
         'Accept' => "application/json"
